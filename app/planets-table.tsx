@@ -28,9 +28,10 @@ const PlanetsTable = () => {
   const [sorted, setSorted] = useState(false);
   const currentPage = Number(urlSearchParams.get("page") ?? 1);
   const searchTerm = urlSearchParams.get("search") ?? "";
+  const deferredPage = useDeferredValue(currentPage);
   const deferredTerm = useDeferredValue(searchTerm);
 
-  const planetsListQuery = useSuspensePlantsList(currentPage, deferredTerm);
+  const planetsListQuery = useSuspensePlantsList(deferredPage, deferredTerm);
   const planets = planetsListQuery.data;
   let planetsList = planets.results;
 
@@ -59,6 +60,7 @@ const PlanetsTable = () => {
   const handleSearchTermChange = (term: string) => {
     const newSearchParams = new URLSearchParams(urlSearchParams);
     newSearchParams.set("search", term.toString());
+    newSearchParams.set("page", "1");
     window.history.pushState(null, "", `?${newSearchParams.toString()}`);
   };
 
