@@ -12,9 +12,6 @@ const config: Config = {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
     },
     extend: {
       backgroundImage: {
@@ -35,6 +32,29 @@ const config: Config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      fontFamily: {
+        space: ["var(--font-space)"],
+        sofia: ["var(--font-sofia)"],
+      },
+      colors: {
+        primary: "#4691F2",
+        secondary: "#1A1313",
+        gray: {
+          1: "#333333",
+          2: "#5B5B5B",
+          3: "#6C6C6C",
+          4: "#C4C4C4",
+          5: "#E0E0E0",
+        },
+      },
+      fontSize: {
+        h1: "64px",
+        h2: "48px",
+        h3: "36px",
+        h4: "20px",
+        h5: "18px",
+        h6: "16px",
       },
     },
   },
