@@ -63,7 +63,10 @@ const TestTwo = () => {
         </div>
 
         <div className="px-[10rem] py-6 flex flex-row justify-between">
-          <Link href="#" className="text-primary font-space font-bold text-4xl">
+          <Link
+            href="#"
+            className="text-primary font-space font-medium text-4xl"
+          >
             Travel<span className="text-black">sy</span>
           </Link>
 
@@ -447,7 +450,7 @@ const TestTwo = () => {
       </section>
 
       <footer>
-        <div className="flex flex-col bg-gradient-to-b from-primary/10 to-primary/0 h-96 px-[10rem] pt-6 relative">
+        <div className="flex flex-col bg-gradient-to-b from-primary/10 to-primary/0 h-auto px-[10rem] pt-6 pb-16 relative">
           <div className="flex flex-row items-center justify-between h-auto w-full bg-primary rounded-3xl -mt-[6.5rem] p-8">
             <h3 className="text-h3 max-w-[20rem] font-space leading-tight">
               Subscribe for Latest Newsletter
@@ -459,16 +462,83 @@ const TestTwo = () => {
                 placeholder="Your Email Address"
               />
 
-              <Button className="h-12 rounded-full bg-white text-primary font-bold px-8">
+              <Button className="h-12 rounded-full bg-white text-primary font-bold px-8 hover:text-secondary">
                 Subscribe
               </Button>
             </div>
           </div>
 
-          <div className="mt-6">
-            <h5 className="text-secondary text-h5 font-semibold">
-              Quick Links
-            </h5>
+          <div className="flex flex-row mt-10 justify-between">
+            <div className="w-1/4">
+              <Link
+                href="#"
+                className="text-primary font-space font-medium text-5xl capitalize"
+              >
+                Travel<span className="text-black">sy</span>
+              </Link>
+
+              <p className="text-gray-3 mt-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
+
+              <div className="flex flex-row gap-3 items-center mt-6">
+                <div
+                  className="flex items-center justify-center h-8 w-8 rounded-full bg-primary p-1 cursor-pointer hover:bg-secondary"
+                  title="Facebook"
+                >
+                  <Facebook className="h-full w-full" color="#ffffff" />
+                </div>
+                <div
+                  className="flex items-center justify-center h-8 w-8 rounded-full bg-primary p-1 cursor-pointer hover:bg-secondary"
+                  title="Twitter"
+                >
+                  <Twitter className="h-full w-full" color="#ffffff" />
+                </div>
+                <div
+                  className="flex items-center justify-center h-8 w-8 rounded-full bg-primary p-1 cursor-pointer hover:bg-secondary"
+                  title="Youtube"
+                >
+                  <Youtube className="h-full w-full" color="#ffffff" />
+                </div>
+                <div
+                  className="flex items-center justify-center h-8 w-8 rounded-full bg-primary p-1.5 cursor-pointer hover:bg-secondary"
+                  title="Instagram"
+                >
+                  <Instagram
+                    className="h-full w-full translate-x-[1px]"
+                    color="#ffffff"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h5 className="text-secondary text-h5 font-medium font-space">
+                Quick Links
+              </h5>
+
+              <ul className="flex flex-col gap-3 text-gray-3 mt-4">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Host A Venue</li>
+                <li>Blog</li>
+                <li>Hotel</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 className="text-secondary text-h5 font-medium font-space">
+                Get In Touch
+              </h5>
+            </div>
+
+            <div>
+              <h5 className="text-secondary text-h5 font-medium font-space">
+                Follow Us On @instagram
+              </h5>
+            </div>
           </div>
         </div>
 
