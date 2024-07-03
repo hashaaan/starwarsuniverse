@@ -357,7 +357,7 @@ const TestTwo = () => {
             </div>
           </div>
 
-          <div className="h-full 2xl:h-[30rem] bg-white rounded-xl shadow-xl p-2.5">
+          <div className="h-full bg-white rounded-xl shadow-xl p-2.5">
             <div className="w-full h-auto overflow-hidden rounded-xl">
               <Image
                 src="/assets/images/hotel-3.jpg"
