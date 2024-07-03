@@ -152,7 +152,7 @@ const TestTwo = () => {
               </div>
             </div>
 
-            <div className="translate-y-20 rounded-xl w-[200px] h-[300px] overflow-hidden">
+            <div className="translate-y-20 rounded-xl w-[200px] h-[320px] overflow-hidden">
               <Image
                 src="/assets/images/gallery-3.png"
                 alt="gallery 1"
@@ -162,8 +162,8 @@ const TestTwo = () => {
               />
             </div>
 
-            <div className="absolute top-[200px] left-[150px]">
-              <Telegram className="h-32 w-32 hover:rotate-12 transition-all cursor-pointer" />
+            <div className="absolute top-[195px] left-[140px]">
+              <Telegram className="h-36 w-36 hover:rotate-12 transition-all cursor-pointer" />
             </div>
           </div>
         </div>
