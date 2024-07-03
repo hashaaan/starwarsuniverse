@@ -275,7 +275,7 @@ const TestTwo = () => {
         </div>
       </section>
 
-      <section className="px-[10rem] bg-gradient-to-b from-primary/10 to-primary/0 py-14">
+      <section className="px-[10rem] bg-gradient-to-b from-primary/10 to-primary/0 pt-14 pb-32">
         <div className="mb-10">
           <h6 className="text-h5 text-primary font-sofia text-center">
             Top Destinations
@@ -445,6 +445,37 @@ const TestTwo = () => {
           </Button>
         </div>
       </section>
+
+      <footer>
+        <div className="flex flex-col bg-gradient-to-b from-primary/10 to-primary/0 h-96 px-[10rem] pt-6 relative">
+          <div className="flex flex-row items-center justify-between h-auto w-full bg-primary rounded-3xl -mt-[6.5rem] p-8">
+            <h3 className="text-h3 max-w-[20rem] font-space leading-tight">
+              Subscribe for Latest Newsletter
+            </h3>
+
+            <div className="flex flex-row gap-5">
+              <Input
+                className="h-12 bg-white rounded-full text-primary border-white placeholder:text-primary px-6 min-w-[24rem]"
+                placeholder="Your Email Address"
+              />
+
+              <Button className="h-12 rounded-full bg-white text-primary font-bold px-8">
+                Subscribe
+              </Button>
+            </div>
+          </div>
+
+          <div className="mt-6">
+            <h5 className="text-secondary text-h5 font-semibold">
+              Quick Links
+            </h5>
+          </div>
+        </div>
+
+        <div className="bg-primary text-center py-3">
+          © 2023 All rights reserved
+        </div>
+      </footer>
     </>
   );
 };
