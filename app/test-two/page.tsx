@@ -299,8 +299,14 @@ const TestTwo = () => {
               </div>
             </div>
 
-            <div className="text-secondary text-3xl font-semibold mt-4">
-              $150/<span className="text-base font-semibold">Per Night</span>
+            <div className="flex flex-row items-center justify-between mt-4 mb-2">
+              <div className="text-secondary text-3xl font-semibold">
+                $150/<span className="text-base font-semibold">Per Night</span>
+              </div>
+
+              <Button className="h-12 w-12 rounded-full bg-primary px-1 hover:bg-secondary">
+                <ArrowRight className="h-8 w-8" />
+              </Button>
             </div>
           </div>
 
@@ -340,8 +346,14 @@ const TestTwo = () => {
               </div>
             </div>
 
-            <div className="text-secondary text-3xl font-semibold mt-4">
-              $150/<span className="text-base font-semibold">Per Night</span>
+            <div className="flex flex-row items-center justify-between mt-4 mb-2">
+              <div className="text-secondary text-3xl font-semibold">
+                $250/<span className="text-base font-semibold">Per Night</span>
+              </div>
+
+              <Button className="h-12 w-12 rounded-full bg-primary px-1 hover:bg-secondary">
+                <ArrowRight className="h-8 w-8" />
+              </Button>
             </div>
           </div>
 
@@ -381,8 +393,14 @@ const TestTwo = () => {
               </div>
             </div>
 
-            <div className="text-secondary text-3xl font-semibold mt-4">
-              $150/<span className="text-base font-semibold">Per Night</span>
+            <div className="flex flex-row items-center justify-between mt-4 mb-2">
+              <div className="text-secondary text-3xl font-semibold">
+                $280/<span className="text-base font-semibold">Per Night</span>
+              </div>
+
+              <Button className="h-12 w-12 rounded-full bg-primary px-1 hover:bg-secondary">
+                <ArrowRight className="h-8 w-8" />
+              </Button>
             </div>
           </div>
         </div>
