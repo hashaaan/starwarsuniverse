@@ -428,6 +428,22 @@ const TestTwo = () => {
             </div>
           </div>
         </div>
+
+        <div className="mt-8 flex justify-center">
+          <Button
+            variant="default"
+            className="bg-white shadow-xl rounded-l-full h-12 px-6"
+          >
+            <ArrowRight className="w-5 h-5 rotate-180" stroke="#4691f2" />
+          </Button>
+
+          <Button
+            variant="default"
+            className="bg-white shadow-xl rounded-r-full h-12 px-6"
+          >
+            <ArrowRight className="w-5 h-5" stroke="#4691f2" />
+          </Button>
+        </div>
       </section>
     </>
   );
