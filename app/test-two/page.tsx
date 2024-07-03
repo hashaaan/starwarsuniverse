@@ -94,7 +94,7 @@ const TestTwo = () => {
               <Magnify className="h-full w-full" />
             </div>
 
-            <Button className="bg-primary rounded-full font-semibold h-12 px-8 gap-2 hover:bg-secondary hover:text-white">
+            <Button className="bg-primary rounded-full h-12 px-8 gap-2 hover:bg-secondary hover:text-white font-bold">
               Contact Us
               <Phone className="h-5 w-5" />
             </Button>
@@ -123,7 +123,7 @@ const TestTwo = () => {
               tincidunt fames quam fusce convallis eget pulvinar.
             </p>
 
-            <Button className="h-12 rounded-full bg-primary gap-2 hover:bg-secondary hover:text-white">
+            <Button className="h-12 rounded-full bg-primary gap-2 hover:bg-secondary hover:text-white font-bold">
               Make Reservation
               <Calendar className="h-4 w-5" />
             </Button>
@@ -169,7 +169,11 @@ const TestTwo = () => {
         </div>
       </section>
 
-      <section className="bg-white bg-cover bg-no-repeat bg-center px-[10rem]">
+      <section className="bg-white bg-cover bg-no-repeat bg-center px-[10rem] relative">
+        <div className="absolute -left-40 top-56">
+          <div className="h-[10rem] w-[30rem] bg-gradient-to-r from-primary/100 to-primary/0 rotate-45"></div>
+        </div>
+
         <div className="flex flex-row bg-white shadow-2xl rounded-full gap-6 px-6 py-6 mb-20">
           <Input
             className="h-12 flex-1 rounded-full text-black placeholder:text-black placeholder:font-bold border-primary/20 bg-white"
@@ -184,13 +188,13 @@ const TestTwo = () => {
             placeholder="Zip Code*"
           />
 
-          <Button className="rounded-full bg-primary h-12 gap-2 px-6 hover:bg-secondary hover:text-white">
+          <Button className="rounded-full bg-primary h-12 gap-2 px-6 hover:bg-secondary hover:text-white font-bold">
             Search <ArrowRight className="w-6 h-6" />
           </Button>
         </div>
 
         <div className="flex flex-row gap-6 pb-12">
-          <div className="flex-1 flex flex-row gap-6 items-center">
+          <div className="flex-1 flex flex-row gap-6 items-center z-20">
             <div className="w-[300px] h-[460px] rounded-full overflow-hidden border-8 border-white shadow-lg">
               <Image
                 src="/assets/images/gallery-4.png"
@@ -201,7 +205,7 @@ const TestTwo = () => {
               />
             </div>
 
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-1 z-20">
               <div className="w-[180px] h-auto">
                 <Image
                   src="/assets/images/gallery-6.png"
@@ -259,7 +263,7 @@ const TestTwo = () => {
               </li>
             </ul>
 
-            <Button className="rounded-full bg-primary h-12 gap-2 px-6 hover:bg-secondary hover:text-white">
+            <Button className="rounded-full bg-primary h-12 gap-2 px-6 hover:bg-secondary hover:text-white font-bold">
               Read More <ArrowRight className="w-6 h-6" />
             </Button>
           </div>
