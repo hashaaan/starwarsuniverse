@@ -12,6 +12,7 @@ import Image from "next/image";
 import { Telegram } from "./assets/logos/telegram";
 import { Input } from "@/components/ui/input";
 import { ArrowRight } from "./assets/icons/arrow-right";
+import { MapPinIcon } from "lucide-react";
 
 const TestTwo = () => {
   return (
@@ -262,11 +263,11 @@ const TestTwo = () => {
         </div>
 
         <div className="grid grid-cols-3 gap-8">
-          <div className="h-96 bg-white rounded-xl shadow-xl p-2.5">
+          <div className="h-full bg-white rounded-xl shadow-xl p-2.5">
             <div className="w-full h-auto overflow-hidden rounded-xl">
               <Image
                 src="/assets/images/hotel-1.jpg"
-                alt="gallery 4"
+                alt="hotel 1"
                 width={200}
                 height={200}
                 className="w-full h-full object-contain object-center"
@@ -281,13 +282,33 @@ const TestTwo = () => {
               Lorem ipsum dolor sit amet, alina adipisci elite. Egestas
               elementum enim netus amet turpis lectus.
             </p>
+
+            <div className="flex flex-row gap-4 mt-4">
+              <div className="flex flex-row gap-2 items-center">
+                <MapPinIcon className="text-primary h-4 w-4" stroke="#4691f2" />
+                <span className="text-secondary font-semibold text-base">
+                  Museums
+                </span>
+              </div>
+
+              <div className="flex flex-row gap-2 items-center">
+                <User className="text-primary h-4 w-4" />
+                <span className="text-secondary font-semibold text-base">
+                  12 Person Capacity
+                </span>
+              </div>
+            </div>
+
+            <div className="text-secondary text-3xl font-semibold mt-4">
+              $150/<span className="text-base font-semibold">Per Night</span>
+            </div>
           </div>
 
-          <div className="h-96 bg-white rounded-xl shadow-xl p-2.5">
+          <div className="h-full bg-white rounded-xl shadow-xl p-2.5">
             <div className="w-full h-auto overflow-hidden rounded-xl">
               <Image
-                src="/assets/images/hotel-1.jpg"
-                alt="gallery 4"
+                src="/assets/images/hotel-2.jpg"
+                alt="hotel 2"
                 width={200}
                 height={200}
                 className="w-full h-full object-contain object-center"
@@ -302,13 +323,33 @@ const TestTwo = () => {
               Lorem ipsum dolor sit amet, alina adipisci elite. Egestas
               elementum enim netus amet turpis lectus.
             </p>
+
+            <div className="flex flex-row gap-4 mt-4">
+              <div className="flex flex-row gap-2 items-center">
+                <MapPinIcon className="text-primary h-4 w-4" stroke="#4691f2" />
+                <span className="text-secondary font-semibold text-base">
+                  Museums
+                </span>
+              </div>
+
+              <div className="flex flex-row gap-2 items-center">
+                <User className="text-primary h-4 w-4" />
+                <span className="text-secondary font-semibold text-base">
+                  12 Person Capacity
+                </span>
+              </div>
+            </div>
+
+            <div className="text-secondary text-3xl font-semibold mt-4">
+              $150/<span className="text-base font-semibold">Per Night</span>
+            </div>
           </div>
 
-          <div className="h-96 bg-white rounded-xl shadow-xl p-2.5">
+          <div className="h-full 2xl:h-[30rem] bg-white rounded-xl shadow-xl p-2.5">
             <div className="w-full h-auto overflow-hidden rounded-xl">
               <Image
-                src="/assets/images/hotel-1.jpg"
-                alt="gallery 4"
+                src="/assets/images/hotel-3.jpg"
+                alt="hotel 3"
                 width={200}
                 height={200}
                 className="w-full h-full object-contain object-center"
@@ -323,6 +364,26 @@ const TestTwo = () => {
               Lorem ipsum dolor sit amet, alina adipisci elite. Egestas
               elementum enim netus amet turpis lectus.
             </p>
+
+            <div className="flex flex-row gap-4 mt-4">
+              <div className="flex flex-row gap-2 items-center">
+                <MapPinIcon className="text-primary h-4 w-4" stroke="#4691f2" />
+                <span className="text-secondary font-semibold text-base">
+                  Museums
+                </span>
+              </div>
+
+              <div className="flex flex-row gap-2 items-center">
+                <User className="text-primary h-4 w-4" />
+                <span className="text-secondary font-semibold text-base">
+                  12 Person Capacity
+                </span>
+              </div>
+            </div>
+
+            <div className="text-secondary text-3xl font-semibold mt-4">
+              $150/<span className="text-base font-semibold">Per Night</span>
+            </div>
           </div>
         </div>
       </section>
