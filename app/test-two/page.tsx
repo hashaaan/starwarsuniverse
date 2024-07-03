@@ -15,6 +15,7 @@ import { ArrowRight } from "./assets/icons/arrow-right";
 import { MapPinIcon } from "lucide-react";
 import { Send } from "./assets/icons/send";
 import Link from "next/link";
+import { AirPlane } from "./assets/svg/airplane";
 
 const TestTwo = () => {
   return (
@@ -172,6 +173,10 @@ const TestTwo = () => {
       <section className="bg-white bg-cover bg-no-repeat bg-center px-[10rem] relative">
         <div className="absolute -left-40 top-56">
           <div className="h-[10rem] w-[30rem] bg-gradient-to-r from-primary/100 to-primary/0 rotate-45"></div>
+        </div>
+
+        <div className="absolute right-0 top-[16rem]">
+          <AirPlane className="w-[26rem] h-[26rem]" />
         </div>
 
         <div className="flex flex-row bg-white shadow-2xl rounded-full gap-6 px-6 py-6 mb-20">
