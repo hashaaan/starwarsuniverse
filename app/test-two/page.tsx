@@ -14,6 +14,7 @@ import { Input } from "@/components/ui/input";
 import { ArrowRight } from "./assets/icons/arrow-right";
 import { MapPinIcon } from "lucide-react";
 import { Send } from "./assets/icons/send";
+import Link from "next/link";
 
 const TestTwo = () => {
   return (
@@ -57,9 +58,9 @@ const TestTwo = () => {
         </div>
 
         <div className="px-[10rem] py-6 flex flex-row justify-between">
-          <div className="text-primary font-space font-bold text-4xl">
+          <Link href="#" className="text-primary font-space font-bold text-4xl">
             Travel<span className="text-black">sy</span>
-          </div>
+          </Link>
 
           <div className="flex flex-row items-center gap-4">
             <ul className="flex flex-row gap-8 text-lg text-gray-3 font-semibold">
@@ -158,7 +159,7 @@ const TestTwo = () => {
             </div>
 
             <div className="absolute top-[200px] left-[150px]">
-              <Telegram className="h-32 w-32" />
+              <Telegram className="h-32 w-32 hover:rotate-12 transition-all cursor-pointer" />
             </div>
           </div>
         </div>
