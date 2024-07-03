@@ -108,7 +108,7 @@ const TestTwo = () => {
 
       <section
         className="bg-white bg-cover bg-no-repeat bg-center"
-        style={{ backgroundImage: "url('./assets/images/hero-bg-1.png')" }}
+        style={{ backgroundImage: "url('./assets/image/hero-bg-1.png')" }}
       >
         <div className="flex flex-row items-center px-[10rem] gap-6 min-h-[620px]">
           <div className="flex-1">
@@ -137,7 +137,7 @@ const TestTwo = () => {
             <div className="flex flex-col gap-6">
               <div className="rounded-xl w-[200px] h-[250px] overflow-hidden">
                 <Image
-                  src="/assets/images/gallery-1.png"
+                  src="/assets/image/gallery-1.png"
                   alt="gallery 1"
                   width={200}
                   height={200}
@@ -147,7 +147,7 @@ const TestTwo = () => {
 
               <div className="rounded-xl w-[200px] h-[180px] overflow-hidden">
                 <Image
-                  src="/assets/images/gallery-2.png"
+                  src="/assets/image/gallery-2.png"
                   alt="gallery 1"
                   width={200}
                   height={200}
@@ -158,7 +158,7 @@ const TestTwo = () => {
 
             <div className="translate-y-20 rounded-xl w-[200px] h-[320px] overflow-hidden">
               <Image
-                src="/assets/images/gallery-3.png"
+                src="/assets/image/gallery-3.png"
                 alt="gallery 1"
                 width={200}
                 height={200}
@@ -205,7 +205,7 @@ const TestTwo = () => {
           <div className="flex-1 flex flex-row gap-6 items-center z-20">
             <div className="w-[300px] h-[460px] rounded-full overflow-hidden border-8 border-white shadow-lg">
               <Image
-                src="/assets/images/gallery-4.png"
+                src="/assets/image/gallery-4.png"
                 alt="gallery 4"
                 width={200}
                 height={200}
@@ -216,7 +216,7 @@ const TestTwo = () => {
             <div className="flex flex-col gap-1 z-20">
               <div className="w-[180px] h-auto">
                 <Image
-                  src="/assets/images/gallery-6.png"
+                  src="/assets/image/gallery-6.png"
                   alt="gallery 4"
                   width={200}
                   height={200}
@@ -226,7 +226,7 @@ const TestTwo = () => {
 
               <div className="w-[150px] h-[230px] rounded-full overflow-hidden border-8 border-white shadow-lg">
                 <Image
-                  src="/assets/images/gallery-5.jpg"
+                  src="/assets/image/gallery-5.jpg"
                   alt="gallery 4"
                   width={200}
                   height={200}
@@ -293,7 +293,7 @@ const TestTwo = () => {
           <div className="h-full bg-white rounded-xl shadow-xl p-2.5">
             <div className="w-full h-auto overflow-hidden rounded-xl">
               <Image
-                src="/assets/images/hotel-1.jpg"
+                src="/assets/image/hotel-1.jpg"
                 alt="hotel 1"
                 width={200}
                 height={200}
@@ -340,7 +340,7 @@ const TestTwo = () => {
           <div className="h-full bg-white rounded-xl shadow-xl p-2.5">
             <div className="w-full h-auto overflow-hidden rounded-xl">
               <Image
-                src="/assets/images/hotel-2.jpg"
+                src="/assets/image/hotel-2.jpg"
                 alt="hotel 2"
                 width={200}
                 height={200}
@@ -387,7 +387,7 @@ const TestTwo = () => {
           <div className="h-full bg-white rounded-xl shadow-xl p-2.5">
             <div className="w-full h-auto overflow-hidden rounded-xl">
               <Image
-                src="/assets/images/hotel-3.jpg"
+                src="/assets/image/hotel-3.jpg"
                 alt="hotel 3"
                 width={200}
                 height={200}
@@ -450,8 +450,8 @@ const TestTwo = () => {
       </section>
 
       <footer>
-        <div className="flex flex-col bg-gradient-to-b from-primary/10 to-primary/0 h-auto px-[10rem] pt-6 pb-16 relative">
-          <div className="flex flex-row items-center justify-between h-auto w-full bg-primary rounded-3xl -mt-[6.5rem] p-8">
+        <div className="flex flex-col bg-gradient-to-b from-primary/10 to-primary/0 h-auto px-[10rem] pb-16 relative">
+          <div className="flex flex-row items-center justify-between h-auto w-full bg-primary rounded-3xl -mt-[5rem] p-8">
             <h3 className="text-h3 max-w-[20rem] font-space leading-tight">
               Subscribe for Latest Newsletter
             </h3>
@@ -468,7 +468,7 @@ const TestTwo = () => {
             </div>
           </div>
 
-          <div className="flex flex-row mt-10 justify-between">
+          <div className="flex flex-row pt-16 justify-between">
             <div className="w-1/4">
               <Link
                 href="#"
@@ -532,12 +532,104 @@ const TestTwo = () => {
               <h5 className="text-secondary text-h5 font-medium font-space">
                 Get In Touch
               </h5>
+
+              <div className="flex flex-col gap-3 text-gray-3 mt-4">
+                <div className="flex flex-row items-center gap-2">
+                  <div
+                    className="flex items-center justify-center h-7 w-7 rounded-full bg-primary p-2 cursor-pointer hover:bg-secondary"
+                    title="Youtube"
+                  >
+                    <Phone className="h-full w-full" color="#ffffff" />
+                  </div>
+                  <span className="">+1 1234567890</span>
+                </div>
+
+                <div className="flex flex-row items-center gap-2">
+                  <div
+                    className="flex items-center justify-center h-7 w-7 rounded-full bg-primary p-2 cursor-pointer hover:bg-secondary"
+                    title="Youtube"
+                  >
+                    <Envelop className="h-full w-full" color="#ffffff" />
+                  </div>
+                  <span className="">example@gmail.com</span>
+                </div>
+
+                <div className="flex flex-row gap-2">
+                  <div
+                    className="flex items-center justify-center h-7 w-7 rounded-full bg-primary p-2 cursor-pointer hover:bg-secondary"
+                    title="Youtube"
+                  >
+                    <MapPinIcon className="h-5 w-5" color="#ffffff" />
+                  </div>
+
+                  <span className="text-wrap max-w-[15rem]">
+                    1014 N Main St, Miami, Oklahoma, 74354, United States
+                  </span>
+                </div>
+              </div>
             </div>
 
             <div>
               <h5 className="text-secondary text-h5 font-medium font-space">
                 Follow Us On @instagram
               </h5>
+
+              <div className="grid grid-cols-3 gap-2.5 mt-4">
+                <div className="size-[6rem] bg-primary/50 rounded overflow-hidden">
+                  <Image
+                    src="/assets/image/instagram-1.jpg"
+                    alt="intagram 1"
+                    width={200}
+                    height={200}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <div className="size-[6rem] bg-primary/50 rounded overflow-hidden">
+                  <Image
+                    src="/assets/image/instagram-2.jpg"
+                    alt="intagram 2"
+                    width={200}
+                    height={200}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <div className="size-[6rem] bg-primary/50 rounded overflow-hidden">
+                  <Image
+                    src="/assets/image/instagram-3.jpg"
+                    alt="intagram 1"
+                    width={200}
+                    height={200}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <div className="size-[6rem] bg-primary/50 rounded overflow-hidden">
+                  <Image
+                    src="/assets/image/instagram-4.jpg"
+                    alt="intagram 2"
+                    width={200}
+                    height={200}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <div className="size-[6rem] bg-primary/50 rounded overflow-hidden">
+                  <Image
+                    src="/assets/image/instagram-5.jpg"
+                    alt="intagram 2"
+                    width={200}
+                    height={200}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <div className="size-[6rem] bg-primary/50 rounded overflow-hidden">
+                  <Image
+                    src="/assets/image/instagram-6.jpg"
+                    alt="intagram 2"
+                    width={200}
+                    height={200}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
