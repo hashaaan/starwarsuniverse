@@ -4,16 +4,16 @@ import { mulish, space_grotesk, sofia } from "../fonts";
 
 const Q2RootLayout = ({ children }: { readonly children: ReactNode }) => {
   return (
-    <div
+    <main
       className={cn(
-        "",
+        "min-h-screen bg-white",
         mulish.className,
         space_grotesk.variable,
         sofia.variable
       )}
     >
       {children}
-    </div>
+    </main>
   );
 };
 

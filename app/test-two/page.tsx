@@ -18,7 +18,7 @@ import Link from "next/link";
 
 const TestTwo = () => {
   return (
-    <main className="min-h-screen bg-white">
+    <>
       <header className="flex flex-col">
         <div className="flex flex-row items-center">
           <div className="pl-[10rem] h-[48px] flex-1 flex flex-row bg-primary gap-4">
@@ -33,7 +33,7 @@ const TestTwo = () => {
             </div>
           </div>
 
-          <div className="flex-1 flex flex-row items-center justify-end pr-[10rem] h-[48px] bg-black">
+          <div className="flex-1 flex flex-row items-center justify-end pr-[10rem] h-[48px] bg-black relative">
             <div className="flex flex-row items-center gap-2 border-r pr-2.5 cursor-pointer">
               <div className="flex items-center justify-center h-8 w-8 rounded-full bg-white p-2">
                 <User className="h-full w-full" />
@@ -53,6 +53,10 @@ const TestTwo = () => {
               <div className="flex items-center justify-center h-8 w-8 rounded-full bg-white p-1.5 cursor-pointer">
                 <Instagram className="h-full w-full translate-x-[1px]" />
               </div>
+            </div>
+
+            <div className="absolute bottom-0 -left-14 h-full w-32 z-20 overflow-hidden">
+              <div className="bg-black h-full w-32 z-20 -rotate-45"></div>
             </div>
           </div>
         </div>
@@ -416,7 +420,7 @@ const TestTwo = () => {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 };
 
