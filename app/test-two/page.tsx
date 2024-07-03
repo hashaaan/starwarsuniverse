@@ -33,23 +33,23 @@ const TestTwo = () => {
           </div>
 
           <div className="flex-1 flex flex-row items-center justify-end pr-[10rem] h-[48px] bg-black">
-            <div className="flex flex-row items-center gap-2 border-r pr-2.5">
+            <div className="flex flex-row items-center gap-2 border-r pr-2.5 cursor-pointer">
               <div className="flex items-center justify-center h-8 w-8 rounded-full bg-white p-2">
                 <User className="h-full w-full" />
               </div>
               <span className="text-base font-light">Login / Register</span>
             </div>
             <div className="pl-2 flex flex-row gap-3 items-center">
-              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-white p-1">
+              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-white p-1 cursor-pointer">
                 <Facebook className="h-full w-full" />
               </div>
-              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-white p-1">
+              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-white p-1 cursor-pointer">
                 <Twitter className="h-full w-full" />
               </div>
-              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-white p-1">
+              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-white p-1 cursor-pointer">
                 <Youtube className="h-full w-full" />
               </div>
-              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-white p-1.5">
+              <div className="flex items-center justify-center h-8 w-8 rounded-full bg-white p-1.5 cursor-pointer">
                 <Instagram className="h-full w-full translate-x-[1px]" />
               </div>
             </div>
@@ -67,29 +67,29 @@ const TestTwo = () => {
                 <span>Home</span>
                 <span className="absolute -bottom-2 bg-primary h-2.5 w-2.5 rounded-full"></span>
               </li>
-              <li className="flex flex-col items-center relative">
+              <li className="flex flex-col items-center relative hover:text-primary cursor-pointer">
                 <span>About Us</span>
                 <span className="hidden absolute -bottom-2 bg-primary h-2.5 w-2.5 rounded-full"></span>
               </li>
-              <li className="flex flex-col items-center relative">
+              <li className="flex flex-col items-center relative hover:text-primary cursor-pointer">
                 <span>Host A Venue</span>
                 <span className="hidden absolute -bottom-2 bg-primary h-2.5 w-2.5 rounded-full"></span>
               </li>
-              <li className="flex flex-col items-center relative">
+              <li className="flex flex-col items-center relative hover:text-primary cursor-pointer">
                 <span>Hotels</span>
                 <span className="hidden absolute -bottom-2 bg-primary h-2.5 w-2.5 rounded-full"></span>
               </li>
-              <li className="flex flex-col items-center relative">
+              <li className="flex flex-col items-center relative hover:text-primary cursor-pointer">
                 <span>Blog</span>
                 <span className="hidden absolute -bottom-2 bg-primary h-2.5 w-2.5 rounded-full"></span>
               </li>
             </ul>
 
-            <div className="flex items-center justify-center h-12 w-12 p-2 border-[1.5px] border-primary rounded-full">
+            <div className="flex items-center justify-center h-12 w-12 p-2 border-[1.5px] border-primary rounded-full hover:border-secondary cursor-pointer">
               <Magnify className="h-full w-full" />
             </div>
 
-            <Button className="bg-primary rounded-full font-semibold h-12 px-8 gap-2 hover:bg-primary/90 hover:text-white">
+            <Button className="bg-primary rounded-full font-semibold h-12 px-8 gap-2 hover:bg-secondary hover:text-white">
               Contact Us
               <Phone className="h-5 w-5" />
             </Button>
@@ -118,7 +118,7 @@ const TestTwo = () => {
               tincidunt fames quam fusce convallis eget pulvinar.
             </p>
 
-            <Button className="h-12 rounded-full bg-primary gap-2 hover:bg-primary/90 hover:text-white">
+            <Button className="h-12 rounded-full bg-primary gap-2 hover:bg-secondary hover:text-white">
               Make Reservation
               <Calendar className="h-4 w-5" />
             </Button>
@@ -179,7 +179,7 @@ const TestTwo = () => {
             placeholder="Zip Code*"
           />
 
-          <Button className="rounded-full bg-primary h-12 gap-2 px-6 hover:bg-primary/90 hover:text-white">
+          <Button className="rounded-full bg-primary h-12 gap-2 px-6 hover:bg-secondary hover:text-white">
             Search <ArrowRight className="w-6 h-6" />
           </Button>
         </div>
@@ -254,7 +254,7 @@ const TestTwo = () => {
               </li>
             </ul>
 
-            <Button className="rounded-full bg-primary h-12 gap-2 px-6 hover:bg-primary/90 hover:text-white">
+            <Button className="rounded-full bg-primary h-12 gap-2 px-6 hover:bg-secondary hover:text-white">
               Read More <ArrowRight className="w-6 h-6" />
             </Button>
           </div>
