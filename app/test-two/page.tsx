@@ -13,6 +13,7 @@ import { Telegram } from "./assets/logos/telegram";
 import { Input } from "@/components/ui/input";
 import { ArrowRight } from "./assets/icons/arrow-right";
 import { MapPinIcon } from "lucide-react";
+import { Send } from "./assets/icons/send";
 
 const TestTwo = () => {
   return (
@@ -238,10 +239,19 @@ const TestTwo = () => {
               Egestas maecenas pharetra convallis posuere morbi.
             </p>
 
-            <ul className="text-black mb-8">
-              <li>Donec adipiscing tristique risus nec feugiat in</li>
-              <li>Donec adipiscing tristique risus nec feugiat in</li>
-              <li>Donec adipiscing tristique risus nec feugiat in</li>
+            <ul className="text-black mb-8 flex flex-col gap-2">
+              <li className="flex flex-row items-center text-wrap">
+                <Send className="h-5 w-5 mr-1.5" />
+                Donec adipiscing tristique risus nec feugiat in
+              </li>
+              <li className="flex flex-row items-center text-wrap">
+                <Send className="h-5 w-5 mr-1.5" />
+                Donec adipiscing tristique risus nec feugiat in
+              </li>
+              <li className="flex flex-row items-center text-wrap">
+                <Send className="h-5 w-5 mr-1.5" />
+                Donec adipiscing tristique risus nec feugiat in
+              </li>
             </ul>
 
             <Button className="rounded-full bg-primary h-12 gap-2 px-6 hover:bg-primary/90 hover:text-white">
