@@ -109,6 +109,7 @@ const TestTwo = () => {
       <section
         className="bg-white bg-cover bg-no-repeat bg-center"
         style={{ backgroundImage: "url('./assets/image/hero-bg-1.png')" }}
+        id="reservation"
       >
         <div className="flex flex-row items-center px-[10rem] gap-6 min-h-[620px]">
           <div className="flex-1">
@@ -135,7 +136,7 @@ const TestTwo = () => {
 
           <div className="flex-1 flex flex-row gap-6 relative">
             <div className="flex flex-col gap-6">
-              <div className="rounded-xl w-[200px] h-[250px] overflow-hidden">
+              <div className="rounded-xl w-[220px] h-[260px] overflow-hidden">
                 <Image
                   src="/assets/image/gallery-1.png"
                   alt="gallery 1"
@@ -145,7 +146,7 @@ const TestTwo = () => {
                 />
               </div>
 
-              <div className="rounded-xl w-[200px] h-[180px] overflow-hidden">
+              <div className="rounded-xl w-[220px] h-[190px] overflow-hidden">
                 <Image
                   src="/assets/image/gallery-2.png"
                   alt="gallery 1"
@@ -156,7 +157,7 @@ const TestTwo = () => {
               </div>
             </div>
 
-            <div className="translate-y-20 rounded-xl w-[200px] h-[320px] overflow-hidden">
+            <div className="translate-y-20 rounded-xl w-[220px] h-[340px] overflow-hidden">
               <Image
                 src="/assets/image/gallery-3.png"
                 alt="gallery 1"
@@ -166,14 +167,17 @@ const TestTwo = () => {
               />
             </div>
 
-            <div className="absolute top-[195px] left-[140px]">
+            <div className="absolute top-[195px] left-[160px]">
               <Telegram className="h-36 w-36 hover:rotate-12 transition-all cursor-pointer" />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-white bg-cover bg-no-repeat bg-center px-[10rem] relative">
+      <section
+        className="bg-white bg-cover bg-no-repeat bg-center px-[10rem] relative"
+        id="search"
+      >
         <div className="absolute -left-40 top-56">
           <div className="h-[10rem] w-[30rem] bg-gradient-to-r from-primary/100 to-primary/0 rotate-45"></div>
         </div>
@@ -278,8 +282,11 @@ const TestTwo = () => {
         </div>
       </section>
 
-      <section className="px-[10rem] bg-gradient-to-b from-primary/10 to-primary/0 pt-14 pb-32">
-        <div className="mb-10">
+      <section
+        className="px-[10rem] bg-gradient-to-b from-primary/10 to-primary/0 pt-14 pb-32"
+        id="top-destinations"
+      >
+        <div className="pb-10">
           <h6 className="text-h5 text-primary font-sofia text-center">
             Top Destinations
           </h6>
@@ -446,6 +453,89 @@ const TestTwo = () => {
           >
             <ArrowRight className="w-5 h-5" stroke="#4691f2" />
           </Button>
+        </div>
+      </section>
+
+      <section
+        className="px-[10rem] bg-gradient-to-b from-primary/10 to-primary/0 pt-14 pb-56"
+        id="blogs"
+      >
+        <div className="pb-10">
+          <h6 className="text-h5 text-primary font-sofia text-center">
+            Latest News
+          </h6>
+
+          <h2 className="text-center text-h2 font-space text-secondary font-semibold tracking-tighter leading-tight">
+            Read Latest Blogs
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-3 gap-8">
+          <div className="h-auto bg-white rounded-xl shadow-xl overflow-hidden">
+            <div className="w-full h-[14rem] rounded-t-xl">
+              <Image
+                src="/assets/image/blog-1.jpg"
+                alt="blog 1"
+                width={200}
+                height={200}
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+
+            <div className="flex flex-col justify-between p-4 h-[14rem]">
+              <h4 className="text-h4 text-secondary font-space font-medium">
+                Journeys Are Best Measured In New Friends
+              </h4>
+
+              <Link href="#" className="text-primary font-bold">
+                Read More
+              </Link>
+            </div>
+          </div>
+
+          <div className="h-auto bg-white rounded-xl shadow-xl overflow-hidden">
+            <div className="w-full h-[14rem] rounded-t-xl">
+              <Image
+                src="/assets/image/blog-2.jpg"
+                alt="blog 1"
+                width={200}
+                height={200}
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+
+            <div className="flex flex-col justify-between p-4 h-[14rem]">
+              <h4 className="text-h4 text-secondary font-space font-medium">
+                A Lot Of Traveling Turns You Into A Storyteller
+              </h4>
+
+              <Link href="#" className="text-primary font-bold">
+                Read More
+              </Link>
+            </div>
+          </div>
+
+          <div className="h-auto bg-white rounded-xl shadow-xl overflow-hidden">
+            <div className="w-full h-[14rem] rounded-t-xl">
+              <Image
+                src="/assets/image/blog-3.jpg"
+                alt="blog 1"
+                width={200}
+                height={200}
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+
+            <div className="flex flex-col justify-between p-4 h-[14rem]">
+              <h4 className="text-h4 text-secondary font-space font-medium">
+                Travel Makes One Modest And Opened To Ideas
+              </h4>
+
+              <Link href="#" className="text-primary font-bold">
+                Read More
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
